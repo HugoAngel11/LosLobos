@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Nocturno</title>
+  <style>
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.6;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      background: #111;
+      padding: 3rem 2rem;
+      text-align: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('image.png');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px #000;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    header p {
+      font-style: italic;
+      color: #ccc;
+      animation: fadeIn 2.5s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      border-left: 4px solid #333;
+      padding-left: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    section:hover {
+      border-color: #9ecfff;
+    }
+
+    h2 {
+      color: #9ecfff;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #9ecfff;
+      margin-top: 5px;
+      animation: growLine 1s ease-in-out;
+    }
+
+    @keyframes growLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 60px;
+      }
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      list-style-type: square;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    ul li:hover {
+      color: #fff;
+      transform: translateX(5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Los Lobos De La Sierra</h1>
+    <p>Grupo de Musica Versatil</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Objetivo</h2>
+      <p>Brindar la mejor experiencia musical y compartir momentos increibles.</p>
+    </section>
+
+    <section>
+      <h2>Contactanos</h2>
+      <p>A travez del numero: 272-227-6097</p>
+      <p>O en nuestra pagina de Facebook: <a href="https://www.facebook.com/LOBOSDELASIERRA" style="color: #fff;">@LOBOSDELASIERRA</a></p>
+      <p>Y siguenos en tik tok: <a href="https://www.tiktok.com/@los.lobos.dl.sierra?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExc3dvSW9BTWRSOGliNmF3QQEe9uixSD45UCzzCn1yaHKjXdKkCAeZb7M6yfOYBo5uCKm8hOnN0yw8OPjYhMU_aem_Q17vePa0tR4B3vZt00tZIw" style="color: #fff;">@los.lobos.dl.sierra</a></p>
+    </section>
+
+    <section>
+      <h2>Características del Grupo</h2>
+      <ul>
+        <li>Integración instrumental y vocal en vivo</li>
+        <li>Repertorio versátil adaptado a distintos públicos</li>
+        <li>Equipamiento profesional de sonido</li>
+        <li>Actitud escénica y conexión con el público</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Repertorio</h2>
+      <ul>
+        <li>Norteño</li>
+        <li>Baladas románticas</li>
+        <li>Rancheras</li>
+        <li>Cumbias</li>
+        <li>Temas originales</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Los Lobos de la Sierra.
+  </footer>
+</body>
+</html>
